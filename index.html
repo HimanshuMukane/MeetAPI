@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow: hidden;
+    }
+  </style>
+</head>
+<body translate="no">
+  <script type="text/javascript" src='https://meet.jit.si/external_api.js'></script>
+
+<div id="meeting" class="meeting"></div>
+
+<script>
+const options = {
+    parentNode: document.querySelector('#meeting'),
+    roomName: 'HimanshuWaliExample',
+      width: '100vw',  // Set width to 100vw
+      height: '100vh', // Set height to 100vh
+  }
+  meetAPI = new JitsiMeetExternalAPI("meet.jit.si", options);
+</script>
+</body>
+</html>
